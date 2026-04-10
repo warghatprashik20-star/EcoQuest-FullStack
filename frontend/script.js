@@ -1,6 +1,6 @@
 async function loadLeaderboard() {
     try {
-        const response = await fetch("http://localhost:5000/api/leaderboard");
+        const response = await fetch("https://eocquestfullstack.vercel.app/");
         const users = await response.json();
 
         const list = document.getElementById("leaderboard");
